@@ -1,0 +1,37 @@
+<div class="well">
+    <h1>Mis eventos (Tag: <%= @events.first.tag %>)</h1>
+
+    <br>
+    <table class="table table-bordered table-striped table-hover">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th class="centered-column">Fecha</th>
+                <th class="centered-column">Evaluaciones</th>
+				<th class="centered-column">Promedio</th>
+            </tr>
+        </thead>  
+  
+        <tbody>
+            <% @events.each do |e| %>
+            <tr>
+                <td><%= e.name %></td>
+
+                <td class="centered-column"><%= e.date.to_date.to_s %></td>
+
+				<td class="centered-column"><%= e.ratings.size %></td>
+
+				<td class="centered-column"><%= e.average_ratings %></td>                
+            </tr>
+            <% end %>
+
+            <tr>
+                <td class="table-footer" colspan="3">Total de eventos: <%= @events.size %></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

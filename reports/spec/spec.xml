@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="17" failures="0" errors="0" time="0.051196" timestamp="2014-06-23T14:48:30-03:00">
+  <properties/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event set_slug should assign downcase slug" time="0.003449"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event set_slug should assign unique slug" time="0.000704"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event positive_ratings_count should return 0 when there are no ratings" time="0.001700"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event positive_ratings_count should return 0 when there are no positive ratings" time="0.001942"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event positive_ratings_count should return 2 when there 2 positive ratings and 1 negative" time="0.004746"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event check_date should return false if date is before today" time="0.002668"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event check_date should return true if date is today" time="0.000277"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event check_date should return true if date is after today" time="0.000261"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event check_date should return false if date is not valid" time="0.000442"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event average_ratings should return &quot; - &quot; if the event did not receive ratings" time="0.002403"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event average_ratings should return 0 if the event receive a negative rating" time="0.004799"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event average_ratings should return 5 if the event receive a neutral rating" time="0.004816"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event average_ratings should return 10 if the event receive a positive rating" time="0.011019"/>
+  <testcase classname="./spec/models/event_spec.rb" name="Event average_ratings should return 6 if the event receive 2 positive ratings, 1 neutral rating and a 1 negative rating" time="0.007593"/>
+  <testcase classname="./spec/models/url_shortner_spec.rb" name="UrlShortener shorten should delegate to Googl" time="0.000427"/>
+  <testcase classname="./spec/models/url_shortner_spec.rb" name="UrlShortener shorten should add slash if missing" time="0.000273"/>
+  <testcase classname="./spec/models/url_shortner_spec.rb" name="UrlShortener for_default_url should take url from ENV" time="0.000115"/>
+</testsuite>
